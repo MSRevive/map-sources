@@ -19,13 +19,13 @@
 
 ## Broken or Dated?
 * helena - needs further looking into
-* lowlands - we seem to only have a .map
+* lowlands - seems we only have a decompiled version.
 * msc_tutorial - we seem to only have a .map
-* skycastle - is skycastle2 the same, otherwise we only have a .map for skycastle.
+* skycastle - seems we only have a decompiled version.
 * smugglers_cove - needs testing.
 * ms_snow - seems we only have a decompiled version, not the "real" source?
 
 ## Need Updating
 * orc_for - post nov2015, seems changes were made?
 * thornlands_north - post nov2015, seems changes were made?
-* tundra - post nov2015, seems changes were made?
+* tundra - post nov2015, some heavy changes were made post nov2015a. Missing nov2015a source.
