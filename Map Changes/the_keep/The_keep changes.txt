@@ -1,0 +1,8 @@
+Took the spectator entity and placed it in the bandit boss' throne looking into the room.
+Added some random bandit NPCs to walk about the room until they're triggered to vanish 
+when starting the map (90 seconds to vanish to give time for multiple people to see).
+
+Fixed the bandits sticking together in the ceiling in the cellar room.  Slightly adjusted
+their spawns so they aren't close together.  Fell properly on my testing.
+
+- Dridmar
