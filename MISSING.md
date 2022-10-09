@@ -16,6 +16,7 @@
 * oceancrossing
 * island1
 * lostcaverns
+* mines
 
 ## Broken or Dated?
 * helena - needs further looking into
