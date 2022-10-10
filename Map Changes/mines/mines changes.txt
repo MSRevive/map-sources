@@ -3,3 +3,8 @@ Please see
 https://github.com/MSRevive/map-sources/issues/4
 
 - Dridmar
+
+Edit:
+
+mines_fixed_with_intro.bsp is the newest version with an ungraded intro.  You can view
+Rudolf running out of the mine in terror.
