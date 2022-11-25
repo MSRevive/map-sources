@@ -20649,15 +20649,6 @@
 }
 }
 {
-"classname" "light"
-"_falloff" "1"
-"_fade" "1.0"
-"style" "0"
-"_light" "253 255 213 130"
-"angles" "0 0 0"
-"origin" "1224 2588 129"
-}
-{
 "classname" "func_breakable"
 "spawnflags" "256"
 "zhlt_lightflags" "0"
@@ -22425,30 +22416,6 @@
 }
 }
 {
-"classname" "func_breakable"
-"spawnflags" "256"
-"zhlt_lightflags" "0"
-"rendercolor" "0 0 0"
-"rendermode" "2"
-"renderfx" "0"
-"explodemagnitude" "0"
-"spawnobject" "0"
-"delay" "0"
-"explosion" "0"
-"material" "0"
-"health" "99999999999"
-"renderamt" "175"
-"angles" "0 0 0"
-{
-( -2163.4 832.6 107 ) ( -2172.6 832.6 107 ) ( -2163.4 823.4 107 ) PK_DODLIGHTPT01 [ -1 -0 -0 -8 ] [ 0 -1 0 0 ] 0 1 1
-( -2160.4 820.4 122 ) ( -2175.6 820.4 122 ) ( -2160.4 835.6 122 ) PK_DODLIGHTPT01 [ 1 0 0 8 ] [ 0 -1 0 0 ] 0 1 1
-( -2160.4 820.4 122 ) ( -2160.4 835.6 122 ) ( -2163.4 823.4 107 ) PI_LANTERN [ 0 1 0 24 ] [ 0 0 -1 21.3333 ] 0 0.5 0.375
-( -2175.6 820.4 122 ) ( -2172.6 823.4 107 ) ( -2175.6 835.6 122 ) PI_LANTERN [ 0 1 0 24 ] [ 0 0 -1 21.3333 ] 0 0.5 0.375
-( -2175.6 835.6 122 ) ( -2172.6 832.6 107 ) ( -2160.4 835.6 122 ) PI_LANTERN [ 1 0 0 0 ] [ 0 0 -1 21.3333 ] 0 0.5 0.375
-( -2160.4 820.4 122 ) ( -2163.4 823.4 107 ) ( -2175.6 820.4 122 ) PI_LANTERN [ 1 0 0 0 ] [ 0 0 -1 21.3333 ] 0 0.5 0.375
-}
-}
-{
 "classname" "func_illusionary"
 "skin" "-1"
 "zhlt_lightflags" "0"
@@ -22493,6 +22460,39 @@
 ( -2160 836 124 ) ( -2160 820 124 ) ( -2164 832 128 ) PI_LANTERN [ 0 1 0 24 ] [ 0 0 -1 21.3333 ] 0 0.5 0.375
 ( -2176 820 124 ) ( -2176 836 124 ) ( -2172 824 128 ) PI_LANTERN [ 0 1 0 24 ] [ 0 0 -1 21.3333 ] 0 0.5 0.375
 }
+}
+{
+"classname" "func_breakable"
+"spawnflags" "256"
+"zhlt_lightflags" "0"
+"rendercolor" "0 0 0"
+"rendermode" "2"
+"renderfx" "0"
+"explodemagnitude" "0"
+"spawnobject" "0"
+"delay" "0"
+"explosion" "0"
+"material" "0"
+"health" "99999999999"
+"renderamt" "175"
+"angles" "0 0 0"
+{
+( -2163.4 832.6 107 ) ( -2172.6 832.6 107 ) ( -2163.4 823.4 107 ) PK_DODLIGHTPT01 [ -1 -0 -0 -8 ] [ 0 -1 0 0 ] 0 1 1
+( -2160.4 820.4 122 ) ( -2175.6 820.4 122 ) ( -2160.4 835.6 122 ) PK_DODLIGHTPT01 [ 1 0 0 8 ] [ 0 -1 0 0 ] 0 1 1
+( -2160.4 820.4 122 ) ( -2160.4 835.6 122 ) ( -2163.4 823.4 107 ) PI_LANTERN [ 0 1 0 24 ] [ 0 0 -1 21.3333 ] 0 0.5 0.375
+( -2175.6 820.4 122 ) ( -2172.6 823.4 107 ) ( -2175.6 835.6 122 ) PI_LANTERN [ 0 1 0 24 ] [ 0 0 -1 21.3333 ] 0 0.5 0.375
+( -2175.6 835.6 122 ) ( -2172.6 832.6 107 ) ( -2160.4 835.6 122 ) PI_LANTERN [ 1 0 0 0 ] [ 0 0 -1 21.3333 ] 0 0.5 0.375
+( -2160.4 820.4 122 ) ( -2163.4 823.4 107 ) ( -2175.6 820.4 122 ) PI_LANTERN [ 1 0 0 0 ] [ 0 0 -1 21.3333 ] 0 0.5 0.375
+}
+}
+{
+"classname" "light"
+"_falloff" "1"
+"_fade" "1.0"
+"style" "0"
+"_light" "253 255 213 130"
+"angles" "0 0 0"
+"origin" "1224 2588 129"
 }
 {
 "classname" "light"
@@ -45232,11 +45232,18 @@
 "origin" "-1935.21 1680.79 384"
 }
 {
-"classname" "zzms_npc"
-"rendercolor" "0 0 0"
-"delaylow" "30"
+"classname" "ms_npc"
+"dmgmulti" "0"
+"hpmulti" "0"
+"reqhp" "0"
+"nplayers" "0"
+"spawnstart" "0"
+"spawnchance" "100"
+"lives" "1"
 "delayhigh" "90"
+"delaylow" "30"
 "angles" "0 180 0"
+"rendercolor" "0 0 0"
 "scriptfile" "deralia/drunk"
 "origin" "-580 -2996 8"
 }
@@ -47103,14 +47110,21 @@
 }
 }
 {
-"classname" "zzms_npc"
-"rendercolor" "0 0 0"
-"delaylow" "30"
+"classname" "ms_npc"
+"dmgmulti" "0"
+"hpmulti" "0"
+"reqhp" "0"
+"nplayers" "0"
+"spawnstart" "0"
+"spawnchance" "100"
+"lives" "1"
 "delayhigh" "90"
-"angles" "0 194 0"
+"delaylow" "30"
+"angles" "0 122 0"
+"rendercolor" "0 0 0"
 "defscriptfile" "deralia/commoner"
-"scriptfile" "deralia/KnightWinston"
-"origin" "115.791 2220.52 8"
+"scriptfile" "deralia/knight_foutpost"
+"origin" "112 2208 8"
 }
 {
 "classname" "ms_npc"
@@ -47143,7 +47157,7 @@
 "angles" "0 270 0"
 "spawnchance" "100"
 "targetname" "guard"
-"origin" "144 2320 8"
+"origin" "176 2320 8"
 }
 {
 "classname" "ms_npc"
@@ -47154,7 +47168,7 @@
 "angles" "0 270 0"
 "spawnchance" "100"
 "targetname" "guard"
-"origin" "96 2320 8"
+"origin" "128 2320 8"
 }
 {
 "classname" "light"
@@ -56443,6 +56457,7 @@
 "delay" "0"
 "sounds" "0"
 "target" "magix"
+"angles" "0 0 0"
 {
 ( 160 -1456 64 ) ( 160 -1456 8 ) ( 160 -1512 64 ) AAATRIGGER [ 0 1 0 0 ] [ 0 0 -1 -8 ] 0 1 1
 ( 120 -1512 64 ) ( 120 -1512 8 ) ( 120 -1456 64 ) AAATRIGGER [ 0 1 0 0 ] [ 0 0 -1 -8 ] 0 1 1
@@ -56461,5 +56476,5 @@
 "angles" "0 270 0"
 "spawnchance" "100"
 "targetname" "guard"
-"origin" "48 2320 8"
+"origin" "80 2320 8"
 }
