@@ -8,3 +8,5 @@ source/catacombs/catacombs.rmx
 *.max
 *.rmx
 prototypes/bly2.max
+*.map
+*.rmx
