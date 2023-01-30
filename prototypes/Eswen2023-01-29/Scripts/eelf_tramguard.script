@@ -1,0 +1,101 @@
+#scope server
+{
+	const CHAT_USE_CONV_ANIMS 0
+
+	const ATTACH_LHAND 3
+	const ATTACH_RHAND 0
+
+}
+
+#include monsters/base_chat_array
+
+{ [shared] game_spawn
+	name Ermos
+	race human
+	hp 2000
+	width 32
+	height 96
+	setmodel npc/elf_fedrosh.mdl
+	setidleanim deep_idle
+	setmoveanim deep_idle
+	nopush 1
+	invincible 1
+	menu.autoopen 1
+	saytextrange 640
+
+//	setmodelbody 1 0 //(robes) 0=dark, 1=light, 2=eshu, 3=necro
+//	setmodelbody 2 0 //(weapon) 0=none, 1=phlame, 2=light, 3=xbow
+//	setprop ent_me skin 1 //(face, boots, hands) 0=Pale, 1=norm, 2=green, 3=dark, 4=darkwtats, 5=fire1, 6=fire2
+	//make a seperate model for this with eyes closed/open and friendlier face
+
+	setmodelbody 0 0 //(faces) 0=friendly_open, 1=friendly_closed, 2=old_dark, 3=young_snob, 4=old_light
+	setmodelbody 1 0 //(robes) 0=dark, 1=light, 2=eshu, 3=necro, 4=gold
+	setmodelbody 2 0 //(weapon) 0=none, 1=phlame, 2=light, 3=xbow
+	
+	if game.serverside
+	name_unique telf_tramguard
+
+	callevent 2.0 win_speech
+	callevent 0.1 pre_glow
+}
+
+{ pre_glow
+	clientevent new all effects/sfx_follow_glow_cl $get(ent_me,index) (128,128,255) 32 9.9
+}
+
+{trig_trambroken
+
+	callevent chat_now "Hail! Regretfully, this fine tram to the Upper Boughs is currently not functioning." 3.0 convo_unarmed_norm none add_to_que
+	callevent chat_now "We have constructed a makeshift walkway for the time being." 5.0 none none add_to_que
+	callevent chat_now "Be careful crossing, it's a long trip back if you happen to fall." 5.0 convo_unarmed_norm none add_to_que
+}
+
+{ game_menu_getoptions
+	local reg.mitem.title 	"Who are you, exactly?"
+	local reg.mitem.type 	callback
+	local reg.mitem.callback say_hi
+	menuitem.register
+
+	local reg.mitem.title 	"What do you know of this place?"
+	local reg.mitem.type 	callback
+	local reg.mitem.callback say_detail
+	menuitem.register
+}
+
+{ say_hi
+	
+	//callevent chat_clear_que
+	callevent chat_now "Greetings, I am Ermos. A guard posted to watch the entrance to the Upper Boughs." 4.0 convo_unarmed_norm clear_que add_to_que
+	callevent chat_now "The Eshu mainly dwell up there but you'll occasionally find a traveller such as yourself." 5.0 none none add_to_que
+}
+
+{ do_spell_trick
+	//play an anim and do some hand sparks here
+	playanim critical ref_aim_trip
+	clientevent new all effects/sfx_beam_sparks $get(ent_me,index) $get(ent_me,index) ATTACH_LHAND (255,255,0) 1.0
+	playsound 0 5 debris/zap1.wav
+}
+
+
+
+{ say_detail
+	callevent chat_now "This is Eswen, on the outskirts of Kray Eldorad; the great Elven capital." 3.0 convo_unarmed_norm clear_que add_to_que
+	callevent chat_now "In particular, this is the tram line to the Upper Boughs." 5.0 none none add_to_que
+	callevent chat_now "Below us lies the 'Grazing Glade'. It's home to many rabbits. Cute little fellows, but they can be aggressive if provoked." 5.0 convo_unarmed_norm none add_to_que
+
+}
+
+{
+repeatdelay 10.0
+	clientevent new all effects/sfx_follow_glow_cl $get(ent_me,index) (128,128,255) 32 9.9
+}
+
+{
+repeatdelay 90.0
+	callexternal $get_by_name(telf_chest) chest_glow
+}
+
+{ ext_bunny_comment
+	callevent chat_now "Now... Where has my bunny Hazel run off to?" 5.0 convo_unarmed_norm none add_to_que
+	playsound 0 10 scientist/cough.wav
+}

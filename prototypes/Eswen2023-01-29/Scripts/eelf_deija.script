@@ -1,0 +1,158 @@
+#scope server
+
+	{
+	setvar HAS_BASE_CHAT_ARRAY_INCLUDE 1
+	
+	const CHAT_AUTO_FACE 0
+	chat CHAT_AUTO_FACE 0
+	const CHAT_FACE_ON_USE 0
+}
+{
+	const CHAT_USE_CONV_ANIMS 0
+	const CHAT_AUTO_FACE 0
+	chat CHAT_AUTO_FACE 0
+	const CHAT_FACE_ON_USE 0
+
+	const ATTACH_LHAND 3
+	const ATTACH_RHAND 0
+
+}
+
+#include monsters/base_chat_array
+
+{ [shared] game_spawn
+	name Deija
+	race human
+	hp 2000
+	width 32
+	height 96
+	setmodel npc/elf_fedrosh.mdl
+	setidleanim crouch_aim_squeak
+	setmoveanim deep_idle
+	nopush 1
+	invincible 1
+	menu.autoopen 1
+	saytextrange 640
+
+//	setmodelbody 1 0 //(robes) 0=dark, 1=light, 2=eshu, 3=necro
+//	setmodelbody 2 0 //(weapon) 0=none, 1=phlame, 2=light, 3=xbow
+//	setprop ent_me skin 1 //(face, boots, hands) 0=Pale, 1=norm, 2=green, 3=dark, 4=darkwtats, 5=fire1, 6=fire2
+	//make a seperate model for this with eyes closed/open and friendlier face
+
+	setmodelbody 3 0 //(faces) 0=friendly_open, 1=friendly_closed, 2=old_dark, 3=young_snob, 4=old_light
+	setmodelbody 1 0 //(robes) 0=dark, 1=light, 2=eshu, 3=necro, 4=gold
+	setmodelbody 2 0 //(weapon) 0=none, 1=phlame, 2=light, 3=xbow
+	
+	if game.serverside
+	name_unique telf_deija
+
+	callevent 2.0 win_speech
+	callevent 0.1 pre_glow
+	chat CHAT_AUTO_FACE 0
+}
+
+{ pre_glow
+	clientevent new all effects/sfx_follow_glow_cl $get(ent_me,index) (128,128,255) 32 9.9
+}
+
+
+{ game_menu_getoptions
+	local reg.mitem.title 	"Hail!"
+	local reg.mitem.type 	callback
+	local reg.mitem.callback say_hi
+	menuitem.register
+
+	local reg.mitem.title 	"What do you know of this place?"
+	local reg.mitem.type 	callback
+	local reg.mitem.callback say_detail
+	menuitem.register
+	
+	if ( MENTIONED_PLAZA )
+	{
+		local reg.mitem.title 	"Plaza?"
+		local reg.mitem.type 	callback
+		local reg.mitem.callback say_plaza
+		menuitem.register
+	}
+	
+	if ( MENTIONED_QUARTER )
+	{
+		local reg.mitem.title 	"The Forgotten Quarter?"
+		local reg.mitem.type 	callback
+		local reg.mitem.callback say_quarter
+		menuitem.register
+	}
+
+		if ( MENTIONED_MELANION )
+	{
+		local reg.mitem.title 	"Melanion?"
+		local reg.mitem.type 	callback
+		local reg.mitem.callback say_melanion
+		menuitem.register
+	}
+	
+
+}
+
+{ say_hi
+	chat CHAT_AUTO_FACE 0
+	//callevent chat_clear_que
+	callevent chat_now "Hello adventurer, I am Deija. I apologize for not being in the best of moods." 4.0 chat CHAT_AUTO_FACE 0 convo_unarmed_norm clear_que add_to_que
+}
+
+{ do_spell_trick
+	//play an anim and do some hand sparks here
+	playanim critical ref_aim_trip
+	clientevent new all effects/sfx_beam_sparks $get(ent_me,index) $get(ent_me,index) ATTACH_LHAND (255,255,0) 1.0
+	playsound 0 5 debris/zap1.wav
+}
+
+
+
+{ say_detail
+    setvard MENTIONED_PLAZA 1
+	setvard MENTIONED_QUARTER 1
+	setvard MENTIONED_MELANION 1
+	callevent chat_now "This is my dwelling. Although with the frequent journeys to the Upper Bough and Plaza, I rarely get to enjoy it." 3.0 convo_unarmed_norm clear_que add_to_que
+	callevent chat_now "Below the balcony outside is the field that leads to the Plaza." 5.0 none none add_to_que
+	callevent chat_now "There is also a cavern that breaks off of the field edge. Be wary when venturing through, it leads to both Melanion and The Forgotten Quarter." 5.0 convo_unarmed_norm none add_to_que
+
+}
+
+{ say_plaza
+	callevent chat_now "The Plaza is the main trade hub for this area of the forest. The entrance to Kray Eldorad can be found on the top floor." 3.0 convo_unarmed_norm clear_que add_to_que
+	
+
+}
+
+{ say_quarter
+	callevent chat_now "The Forgotten Quarter is a section of the town here that used to be connected to the Plaza." 3.0 convo_unarmed_norm clear_que add_to_que
+	callevent chat_now "A few years ago odd fungi began appearing and was soon growing everywhere in that area." 5.0 none none add_to_que
+	callevent chat_now "Only a short time was spent studying them before sickness began spreading." 5.0 none none add_to_que
+	callevent chat_now "While a cure was being researched, the area was cut off from the Plaza to prevent further spread of the fungi." 5.0 none none add_to_que
+	callevent chat_now "Interest in a cure faded away as the threat appeared to have be dealt with and soon other threats began to burden our minds." 5.0 none none add_to_que
+	callevent chat_now "And thus 'The Forgotten Quarter' still is. I would advise against visiting." 5.0 none none add_to_que
+	
+
+}
+
+{ say_melanion
+	callevent chat_now "Melanion..." 3.0 convo_unarmed_norm clear_que add_to_que
+	
+
+}
+
+{
+repeatdelay 10.0
+	clientevent new all effects/sfx_follow_glow_cl $get(ent_me,index) (128,128,255) 32 9.9
+}
+
+{
+repeatdelay 90.0
+	callexternal $get_by_name(telf_chest) chest_glow
+}
+
+{ ext_bunny_comment
+	callevent chat_now "Now... Where has my bunny Hazel run off to?" 5.0 convo_unarmed_norm none add_to_que
+	playsound 0 10 scientist/cough.wav
+}

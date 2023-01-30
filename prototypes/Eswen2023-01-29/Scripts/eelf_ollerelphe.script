@@ -1,0 +1,150 @@
+#scope server
+{
+	const CHAT_USE_CONV_ANIMS 0
+
+	const ATTACH_LHAND 3
+	const ATTACH_RHAND 0
+
+}
+
+#include monsters/base_chat_array
+
+{ [shared] game_spawn
+	name Ollerelphe
+	race human
+	hp 2000
+	width 32
+	height 96
+	setmodel npc/elf_fedrosh.mdl
+	setidleanim deep_idle
+	setmoveanim deep_idle
+	nopush 1
+	invincible 1
+	menu.autoopen 1
+	saytextrange 640
+
+//	setmodelbody 0 0 //(robes) 0=dark, 1=light, 2=eshu, 3=necro
+//	setmodelbody 1 0 //(weapon) 0=none, 1=phlame, 2=light, 3=xbow
+//	setprop ent_me skin 1 //(face, boots, hands) 0=Pale, 1=norm, 2=green, 3=dark, 4=darkwtats, 5=fire1, 6=fire2
+	//make a seperate model for this with eyes closed/open and friendlier face
+
+	setmodelbody 4 0 //(faces) 0=friendly_open, 1=friendly_closed, 2=old_dark, 3=young_snob, 4=old_light
+	setmodelbody 0 0 //(robes) 0=dark, 1=light, 2=eshu, 3=necro, 4=gold
+	setmodelbody 2 0 //(weapon) 0=none, 1=phlame, 2=light, 3=xbow
+	
+	if game.serverside
+	name_unique telf_ollerelphe
+
+	callevent 2.0 win_speech
+	callevent 0.1 pre_glow
+}
+
+{ pre_glow
+	clientevent new all effects/sfx_follow_glow_cl $get(ent_me,index) (128,128,255) 32 9.9
+}
+
+
+{ game_menu_getoptions
+	local reg.mitem.title 	"Hail!"
+	local reg.mitem.type 	callback
+	local reg.mitem.callback say_hi
+	menuitem.register
+
+	local reg.mitem.title 	"What do you know of this place?"
+	local reg.mitem.type 	callback
+	local reg.mitem.callback say_detail
+	menuitem.register
+	
+	if ( MENTIONED_TOME )
+	{
+		local reg.mitem.title 	"Favorite tome?"
+		local reg.mitem.type 	callback
+		local reg.mitem.callback say_tome
+		menuitem.register
+	}
+	
+	if ( MENTIONED_QUARTER )
+	{
+		local reg.mitem.title 	"The Forgotten Quarter?"
+		local reg.mitem.type 	callback
+		local reg.mitem.callback say_quarter
+		menuitem.register
+	}
+
+		if ( MENTIONED_MELANION )
+	{
+		local reg.mitem.title 	"Melanion?"
+		local reg.mitem.type 	callback
+		local reg.mitem.callback say_melanion
+		menuitem.register
+	}
+	
+
+}
+
+{ say_hi
+	
+	//callevent chat_clear_que
+	callevent chat_now "Oh! Hello, I didn't notice you there. I am Ollerelphe." 4.0 convo_unarmed_norm clear_que add_to_que
+}
+
+{ do_spell_trick
+	//play an anim and do some hand sparks here
+	playanim critical ref_aim_trip
+	clientevent new all effects/sfx_beam_sparks $get(ent_me,index) $get(ent_me,index) ATTACH_LHAND (255,255,0) 1.0
+	playsound 0 5 debris/zap1.wav
+}
+
+
+
+{ say_detail
+    setvard MENTIONED_TOME 1
+	callevent chat_now "What do I know of this place, eh? It's my bough. Yes, it is small, but it's my retreat away from the hustle and bustle of Kray Eldorad." 3.0 convo_unarmed_norm clear_que add_to_que
+	callevent chat_now "It's quiet enough here with me and my tomes. If you have a minute, you're more than welcome to sit down and read what you'd like." 5.0 none none add_to_que
+	callevent chat_now "Now if only I had my favorite tome, 'Serrelain and Moltiare'. I would love to read through it again." 5.0 convo_unarmed_norm none add_to_que
+
+}
+
+{ say_tome
+    setvard TOME_QUEST 1
+	callevent chat_now "I let Haezel, a friend from the Upper Boughs and a fellow tome enthusiast borrow 'Serrelain and Moltiare'." 3.0 convo_unarmed_norm clear_que add_to_que
+	callevent chat_now "He is usually very punctual about returning my tomes, but when we last spoke an old arguement flared up regarding the lost Loreldians." 5.0 none none add_to_que
+    callevent chat_now "I have a theory that poems mentioning a Loreldian by name are not fiction as is the popular belief." 5.0 none none add_to_que
+	callevent chat_now "But Haezel on the other hand fully believes the writings of a certain wizard." 5.0 none none add_to_que
+	callevent chat_now "He insists lost Loreldians in fact no longer have names, their destruction being so total as to remove all specific memories of them." 5.0 none none add_to_que
+	callevent chat_now "Even from the minds of the gods." 5.0 none none add_to_que
+	callevent chat_now "Thus any elven poem referencing a Loreldian by name is fictional." 5.0 none none add_to_que
+    callevent chat_now "If you find yourself in the Upper Boughs, can you please do me a favor and keep an eye out for him and get my tome back to me?" 5.0 none none add_to_que
+}
+
+{ say_quarter
+	callevent chat_now "The Forgotten Quarter is a section of the town here that used to be connected to the Plaza." 3.0 convo_unarmed_norm clear_que add_to_que
+	callevent chat_now "A few years ago odd fungi began appearing and was soon growing everywhere in that area." 5.0 none none add_to_que
+	callevent chat_now "Only a short time was spent studying them before sickness began spreading." 5.0 none none add_to_que
+	callevent chat_now "While a cure was being researched, the area was cut off from the Plaza to prevent further spread of the fungi." 5.0 none none add_to_que
+	callevent chat_now "Interest in a cure faded away as the threat appeared to have be dealt with and soon other threats began to burden our minds." 5.0 none none add_to_que
+	callevent chat_now "And thus 'The Forgotten Quarter' still is. I would advise against visiting." 5.0 none none add_to_que
+	
+
+}
+
+{ say_melanion
+	callevent chat_now "Melanion..." 3.0 convo_unarmed_norm clear_que add_to_que
+	
+
+}
+
+{
+repeatdelay 10.0
+	clientevent new all effects/sfx_follow_glow_cl $get(ent_me,index) (128,128,255) 32 9.9
+}
+
+{
+repeatdelay 90.0
+	callexternal $get_by_name(telf_chest) chest_glow
+}
+
+{ ext_bunny_comment
+	callevent chat_now "Now... Where has my bunny Hazel run off to?" 5.0 convo_unarmed_norm none add_to_que
+	playsound 0 10 scientist/cough.wav
+}

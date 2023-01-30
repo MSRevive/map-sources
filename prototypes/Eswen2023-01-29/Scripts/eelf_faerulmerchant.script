@@ -1,0 +1,116 @@
+#scope server
+{
+	const CHAT_USE_CONV_ANIMS 0
+
+	const ATTACH_LHAND 3
+	const ATTACH_RHAND 0
+
+}
+
+//Elven Merchant - sells Elven things
+
+{
+   	//base_vendor
+	setvar	ANIM_WALK walk2handed
+	setvar	ANIM_RUN walk2handed
+   	setvar STORE_NAME eswen_plazamerchant1 //must be unique for each shop on map
+   	setvar STORE_TRIGGERTEXT "store trade buy sell purchase sale offer"
+	setvar STORE_SELLMENU 1
+
+	const SOUND_DEATH none //represses error from base_npc
+}
+
+#include monsters/base_chat
+#include monsters/base_npc
+#include monsters/base_npc_vendor
+//if you want more sophisticated communication, you can add #include monsters/base_chat_array here
+//Hartold also has an include and other events for new player tutorial messages, but I've stripped them here for simplicity
+//also stripped the bits that make him aware that the mayor has been arrested
+
+{ npc_spawn
+
+   name Faerul
+   hp 60
+   width 32
+   height 72
+   race human
+   roam 0
+   setmodel    npc/elf_fedrosh.mdl
+   setidleanim idle
+   setmoveanim	walk2handed
+   invincible  1
+   callevent 1.0 set_home_loc
+}
+
+{ set_home_loc
+	setvard HOME_LOC game.monster.origin
+	setvard HOME_YAW $vec.yaw(game.monster.angles)
+}
+
+{ say_hi
+   saytext Greetings adventurer! Care to take a look at some fine Elven wares?
+}
+
+{ trig_flowercompliant
+
+	saytext Hey! Stay out of there!
+	playanim once crouch_idle
+	callevent 1.5 flowers_2
+}
+
+{ flowers_2
+
+	//Stop waving
+	playanim walk2handed
+	callevent 0.2 go_home
+}
+
+{ go_home
+	setvard GOT_HOME 0
+	setmovedest HOME_LOC 5
+	setmoveanim ANIM_WALK
+	callevent 1.0 check_home_loop
+}
+
+{ check_home_loop
+	if !GOT_HOME
+	callevent 1.0 check_home_loop
+	if ( $dist(game.monster.origin,HOME_LOC) <= 5 )
+	{
+		setmovedest none
+		setangle face $vec(0,HOME_YAW,0)
+		setvard GOT_HOME 1
+		setmoveanim ANIM_IDLE
+	}
+
+	if $dist(game.monster.origin,HOME_LOC) > 5
+	setmoveanim ANIM_WALK
+	setmovedest HOME_LOC 1
+}
+
+{ vendor_addstoreitems
+
+   //           |Store name|  |Item name|  		|Quantity| 	|cost%|	
+   addstoreitem  STORE_NAME    health_mpotion		 30		 100 0.1
+   addstoreitem  STORE_NAME    health_lpotion		 30		 110 0.1
+   addstoreitem  STORE_NAME    scroll_fire_dart		 $rand(0,1)	 120
+   addstoreitem  STORE_NAME    scroll_lightning_weak	 $rand(0,1)	 120
+   addstoreitem  STORE_NAME    scroll2_glow		 1		 120
+   addstoreitem  STORE_NAME    mana_mpotion		 5  		 105 0.1
+   addstoreitem  STORE_NAME    scroll_rejuvenate	 1  		 200	0.1
+   addstoreitem  STORE_NAME    scroll2_rejuvenate	 1		 800	0.1
+   addstoreitem  STORE_NAME    sheath_spellbook		 $rand(1,2)	 100	0.1
+
+   if( $rand(1,3) == 1 ) addstoreitem  STORE_NAME     health_spotion   	 $rand(1,4)          100
+}
+
+//Rumours
+{ say_rumor
+
+  playanim once pondering
+  callevent 1.5 say_rumour2
+}
+{ say_rumour2
+
+  saytext Wildlife have been more aggressive lately, even heard of a Manticore attacking the Upper Boughs at times.
+}
