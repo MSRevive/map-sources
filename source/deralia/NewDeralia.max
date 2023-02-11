@@ -13,7 +13,7 @@
 "hpwarn" "0"
 "angles" "0 0 0"
 "mapversion" "220"
-"wad" "/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/daragoth.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/deralia.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/edana.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/gatecity.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/mastersword.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/medieval.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/ms_generic.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/ms_village.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/thornlands.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/dev/MSCWADS/allinone_fixed.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/dev/MSCWADS/double_rainbow.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/dev/MSCWADS/jp_dev_plus.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/dev/MSCWADS/randomwindows.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/dev/MSCWADS/vangogh.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/kami-platinum.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/sfor_extras.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/css.wad;/Program Files (x86)/Steam/steamapps/common/JACK/extracted.wad;/Users/Matthew/Desktop/Untitled1.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/dev/MSCWADS/Cleicert_miptex2.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/dev/MSCWADS/Cleicert.wad"
+"wad" "/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/daragoth.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/deralia.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/edana.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/gatecity.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/mastersword.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/medieval.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/ms_generic.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/ms_village.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/thornlands.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/dev/MSCWADS/allinone_fixed.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/dev/MSCWADS/double_rainbow.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/dev/MSCWADS/jp_dev_plus.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/dev/MSCWADS/randomwindows.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/dev/MSCWADS/vangogh.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/kami-platinum.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/sfor_extras.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/css.wad;/Program Files (x86)/Steam/steamapps/common/JACK/extracted.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/dev/MSCWADS/Cleicert_miptex2.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/dev/MSCWADS/Cleicert.wad;/Users/Matthew/Desktop/thewall2extracted.wad;/Users/Matthew/Desktop/catacombsextracted.wad;/Users/Matthew/Documents/GitHub/map-sources/wads/islesofdread1.wad"
 "_generator" "J.A.C.K. 1.1.2800 (vpHalfLife)"
 {
 ( 1216 2580 142 ) ( 1216 2580 14 ) ( 1216 2596 142 ) CLIP [ 0 1 0 12 ] [ 0 0 -1 6 ] 0 1 1
@@ -19708,7 +19708,7 @@
 ( 44 2172 0 ) ( 44 2172 -16 ) ( 44 2484 0 ) NULL [ 0 1 0 8 ] [ 0 0 -1 0 ] 0 1 1
 ( 44 2484 -16 ) ( 428 2484 -16 ) ( 44 2484 0 ) NULL [ -1 0 0 -0 ] [ 0 0 -1 0 ] 0 1 1
 ( 44 2172 0 ) ( 428 2172 0 ) ( 44 2172 -16 ) NULL [ -1 0 0 -0 ] [ 0 0 -1 0 ] 0 1 1
-( 44 2172 0 ) ( 44 2484 0 ) ( 428 2172 0 ) PI_COBBLES1 [ 0 1 0 8 ] [ 1 0 0 56 ] 0 1 1
+( 44 2172 0 ) ( 44 2484 0 ) ( 428 2172 0 ) PI_COBBLES1 [ 1 0 0 8 ] [ 0 -1 0 56 ] 0 1 1
 ( 44 2484 -16 ) ( 44 2172 -16 ) ( 428 2484 -16 ) NULL [ 0 1 0 8 ] [ 1 0 0 0 ] 0 1 1
 }
 {
@@ -19717,14 +19717,14 @@
 ( 1488 2172 -16 ) ( 504 2172 -16 ) ( 1488 2172 0 ) NULL [ -1 0 0 -0 ] [ 0 0 -1 0 ] 0 1 1
 ( 1488 2484 0 ) ( 504 2484 0 ) ( 1488 2484 -16 ) NULL [ -1 0 0 -0 ] [ 0 0 -1 0 ] 0 1 1
 ( 1488 2484 -16 ) ( 504 2484 -16 ) ( 1488 2172 -16 ) NULL [ 0 1 0 8 ] [ 1 0 0 0 ] 0 1 1
-( 1488 2172 0 ) ( 504 2172 0 ) ( 1488 2484 0 ) PI_COBBLES1 [ 0 1 0 8 ] [ 1 0 0 56 ] 0 1 1
+( 1488 2172 0 ) ( 504 2172 0 ) ( 1488 2484 0 ) PI_COBBLES1 [ 1 0 0 8 ] [ 0 -1 0 56 ] 0 1 1
 }
 {
 ( 428 2484 0 ) ( 428 2204 0 ) ( 428 2484 -16 ) NULL [ 0 -1 0 8 ] [ 0 0 -1 0 ] 0 1 1
 ( 504 2484 -16 ) ( 504 2204 -16 ) ( 504 2484 0 ) NULL [ -0 1 0 8 ] [ 0 0 -1 0 ] 0 1 1
 ( 504 2204 0 ) ( 504 2204 -16 ) ( 428 2204 0 ) NULL [ 1 0 0 -0 ] [ 0 0 -1 0 ] 0 1 1
 ( 428 2484 0 ) ( 428 2484 -16 ) ( 504 2484 0 ) NULL [ -1 0 0 -0 ] [ 0 0 -1 0 ] 0 1 1
-( 428 2204 0 ) ( 428 2484 0 ) ( 504 2204 0 ) PI_COBBLES1 [ 0 1 0 8 ] [ 1 0 0 56 ] 0 1 1
+( 428 2204 0 ) ( 428 2484 0 ) ( 504 2204 0 ) PI_COBBLES1 [ 1 0 0 8 ] [ 0 -1 0 56 ] 0 1 1
 ( 428 2484 -16 ) ( 428 2204 -16 ) ( 504 2484 -16 ) NULL [ 0 1 0 8 ] [ 1 0 0 0 ] 0 1 1
 }
 {
@@ -20244,7 +20244,7 @@
 ( 434 2198 -2 ) ( 434 2198 -16 ) ( 434 2172 -2 ) PI_CURB [ 0 1 0 -240 ] [ 0 0 -1 0 ] 0 1 1
 ( 434 2172 -2 ) ( 434 2172 -16 ) ( 428 2172 0 ) NULL [ -1 0 0 14 ] [ 0 0 -1 0 ] 0 1 1
 ( 428 2204 0 ) ( 428 2204 -16 ) ( 434 2198 -2 ) NULL [ -1 0 0 14 ] [ 0 0 -1 0 ] 0 1 1
-( 428 2172 0 ) ( 428 2204 0 ) ( 434 2172 -2 ) PI_COBBLES1 [ 0 1 0 8 ] [ 0.948683 0 -0.316228 77.9635 ] 0 1 1
+( 428 2172 0 ) ( 428 2204 0 ) ( 434 2172 -2 ) PI_COBBLES1 [ 0.948683 0 -0.316228 29.9635 ] [ 0 -1 0 56 ] 0 1 1
 ( 428 2204 -16 ) ( 428 2172 -16 ) ( 434 2198 -16 ) NULL [ 1 0 0 14 ] [ 0 -1 0 -4 ] 0 1 1
 }
 {
@@ -20259,7 +20259,7 @@
 ( 498 2198 -2 ) ( 498 2198 -16 ) ( 434 2198 -2 ) PI_CURB [ -1 0 0 62 ] [ 0 0 -1 0 ] 0 1 1
 ( 428 2204 -0 ) ( 428 2204 -16 ) ( 504 2204 -0 ) NULL [ -1 0 0 14 ] [ 0 0 -1 0 ] 0 1 1
 ( 504 2204 -0 ) ( 504 2204 -16 ) ( 498 2198 -2 ) NULL [ 0 1 0 -4 ] [ 0 0 -1 0 ] 0 1 1
-( 498 2198 -2 ) ( 434 2198 -2 ) ( 504 2204 -0 ) PI_COBBLES1 [ 0 0.948683 0.316228 121.102 ] [ 1 0 0 56 ] 0 1 1
+( 498 2198 -2 ) ( 434 2198 -2 ) ( 504 2204 -0 ) PI_COBBLES1 [ 1 0 0 8 ] [ 0 -0.948683 -0.316228 -57.1018 ] 0 1 1
 ( 434 2198 -2 ) ( 434 2198 -16 ) ( 428 2204 -0 ) NULL [ 0 -1 0 4 ] [ 0 0 -1 0 ] 0 1 1
 ( 504 2204 -16 ) ( 428 2204 -16 ) ( 498 2198 -16 ) NULL [ 1 0 0 14 ] [ 0 -1 0 -4 ] 0 1 1
 }
@@ -20276,7 +20276,7 @@
 ( 498 2172 -2 ) ( 498 2172 -16 ) ( 498 2198 -2 ) PI_CURB [ 0 -1 0 200 ] [ -0 0 -1 0 ] 0 1 1
 ( 504 2172 -0 ) ( 504 2172 -16 ) ( 498 2172 -2 ) NULL [ -1 0 0 14 ] [ 0 0 -1 0 ] 0 1 1
 ( 498 2198 -2 ) ( 498 2198 -16 ) ( 504 2204 -0 ) NULL [ -1 0 0 14 ] [ 0 0 -1 0 ] 0 1 1
-( 498 2172 -2 ) ( 498 2198 -2 ) ( 504 2172 -0 ) PI_COBBLES1 [ 0 1 0 8 ] [ 0.948683 0 0.316228 81.8635 ] 0 1 1
+( 498 2172 -2 ) ( 498 2198 -2 ) ( 504 2172 -0 ) PI_COBBLES1 [ 0.948683 0 0.316228 33.8635 ] [ 0 -1 0 56 ] 0 1 1
 ( 498 2198 -16 ) ( 498 2172 -16 ) ( 504 2204 -16 ) NULL [ 1 0 0 14 ] [ 0 -1 0 -4 ] 0 1 1
 }
 {
@@ -20647,29 +20647,13 @@
 ( 2368 1344 368 ) ( 2368 1360 368 ) ( 3752 1344 368 ) STONE117 [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
 ( 3768 1360 368 ) ( 3768 1360 320 ) ( 3752 1344 368 ) STONE117 [ 0 1 0 0 ] [ 0 0 -1 8 ] 0 1 1
 }
-}
 {
-"classname" "func_breakable"
-"spawnflags" "256"
-"zhlt_lightflags" "0"
-"rendercolor" "0 0 0"
-"rendermode" "2"
-"renderfx" "0"
-"explodemagnitude" "0"
-"spawnobject" "0"
-"delay" "0"
-"explosion" "0"
-"material" "0"
-"health" "99999999999"
-"renderamt" "175"
-"angles" "0 0 0"
-{
-( 1231.6 2580.4 136 ) ( 1216.4 2580.4 136 ) ( 1231.6 2595.6 136 ) PK_DODLIGHTPT01 [ 1 0 0 8 ] [ 0 -1 0 -32 ] 0 1 1
-( 1228.6 2592.6 121 ) ( 1219.4 2592.6 121 ) ( 1228.6 2583.4 121 ) PK_DODLIGHTPT01 [ -1 -0 -0 -8 ] [ 0 -1 0 -32 ] 0 1 1
-( 1231.6 2580.4 136 ) ( 1228.6 2583.4 121 ) ( 1216.4 2580.4 136 ) PI_LANTERN [ 1 0 0 0 ] [ 0 0 -1 58.6667 ] 0 0.5 0.375
-( 1216.4 2595.6 136 ) ( 1219.4 2592.6 121 ) ( 1231.6 2595.6 136 ) PI_LANTERN [ 1 0 0 0 ] [ 0 0 -1 58.6667 ] 0 0.5 0.375
-( 1216.4 2580.4 136 ) ( 1219.4 2583.4 121 ) ( 1216.4 2595.6 136 ) PI_LANTERN [ 0 1 0 24 ] [ 0 0 -1 58.6667 ] 0 0.5 0.375
-( 1231.6 2580.4 136 ) ( 1231.6 2595.6 136 ) ( 1228.6 2583.4 121 ) PI_LANTERN [ 0 1 0 24 ] [ 0 0 -1 58.6667 ] 0 0.5 0.375
+( 280 2176 784 ) ( 280 2176 -5 ) ( 280 2280 784 ) CLIP [ 0 1 0 0 ] [ 0 0 -1 -5 ] 0 1 1
+( 416 2280 784 ) ( 416 2280 -5 ) ( 416 2176 784 ) CLIP [ 0 1 0 0 ] [ 0 0 -1 -5 ] 0 1 1
+( 280 2280 784 ) ( 280 2280 -5 ) ( 416 2280 784 ) CLIP [ 1 0 0 0 ] [ 0 0 -1 -5 ] 0 1 1
+( 416 2176 784 ) ( 416 2176 -5 ) ( 280 2176 784 ) CLIP [ 1 0 0 0 ] [ 0 0 -1 -5 ] 0 1 1
+( 416 2176 784 ) ( 280 2176 784 ) ( 416 2280 784 ) CLIP [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 280 2280 -5 ) ( 280 2176 -5 ) ( 416 2280 -5 ) CLIP [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
 }
 }
 {
@@ -22459,6 +22443,30 @@
 ( -2160 836 124 ) ( -2160.4 835.6 122 ) ( -2160 820 124 ) PI_LANTERN [ 0 1 0 24 ] [ 0 0 -1 21.3333 ] 0 0.5 0.375
 ( -2160 836 124 ) ( -2160 820 124 ) ( -2164 832 128 ) PI_LANTERN [ 0 1 0 24 ] [ 0 0 -1 21.3333 ] 0 0.5 0.375
 ( -2176 820 124 ) ( -2176 836 124 ) ( -2172 824 128 ) PI_LANTERN [ 0 1 0 24 ] [ 0 0 -1 21.3333 ] 0 0.5 0.375
+}
+}
+{
+"classname" "func_breakable"
+"spawnflags" "256"
+"zhlt_lightflags" "0"
+"rendercolor" "0 0 0"
+"rendermode" "2"
+"renderfx" "0"
+"explodemagnitude" "0"
+"spawnobject" "0"
+"delay" "0"
+"explosion" "0"
+"material" "0"
+"health" "99999999999"
+"renderamt" "175"
+"angles" "0 0 0"
+{
+( 1231.6 2580.4 136 ) ( 1216.4 2580.4 136 ) ( 1231.6 2595.6 136 ) PK_DODLIGHTPT01 [ 1 0 0 8 ] [ 0 -1 0 -32 ] 0 1 1
+( 1228.6 2592.6 121 ) ( 1219.4 2592.6 121 ) ( 1228.6 2583.4 121 ) PK_DODLIGHTPT01 [ -1 -0 -0 -8 ] [ 0 -1 0 -32 ] 0 1 1
+( 1231.6 2580.4 136 ) ( 1228.6 2583.4 121 ) ( 1216.4 2580.4 136 ) PI_LANTERN [ 1 0 0 0 ] [ 0 0 -1 58.6667 ] 0 0.5 0.375
+( 1216.4 2595.6 136 ) ( 1219.4 2592.6 121 ) ( 1231.6 2595.6 136 ) PI_LANTERN [ 1 0 0 0 ] [ 0 0 -1 58.6667 ] 0 0.5 0.375
+( 1216.4 2580.4 136 ) ( 1219.4 2583.4 121 ) ( 1216.4 2595.6 136 ) PI_LANTERN [ 0 1 0 24 ] [ 0 0 -1 58.6667 ] 0 0.5 0.375
+( 1231.6 2580.4 136 ) ( 1231.6 2595.6 136 ) ( 1228.6 2583.4 121 ) PI_LANTERN [ 0 1 0 24 ] [ 0 0 -1 58.6667 ] 0 0.5 0.375
 }
 }
 {
@@ -47157,17 +47165,8 @@
 "angles" "0 270 0"
 "spawnchance" "100"
 "targetname" "guard"
-"origin" "176 2320 8"
-}
-{
-"classname" "ms_npc"
-"rendercolor" "0 0 0"
-"delaylow" "30"
-"delayhigh" "90"
-"defscriptfile" "deralia/guard_gate"
-"angles" "0 270 0"
-"spawnchance" "100"
-"targetname" "guard"
+"scriptfile" "deralia/guard"
+"title" "Soldier"
 "origin" "128 2320 8"
 }
 {
@@ -56476,5 +56475,41 @@
 "angles" "0 270 0"
 "spawnchance" "100"
 "targetname" "guard"
+"scriptfile" "deralia/guard"
+"title" "Soldier"
 "origin" "80 2320 8"
+}
+{
+"classname" "env_model"
+"maxs" "16 16 36"
+"mins" "-16 -16 0"
+"dmg" "0"
+"rendercolor" "0 0 0"
+"rendermode" "0"
+"renderfx" "0"
+"scale" "1.5"
+"framerate" "1"
+"sequence" "1"
+"body" "0"
+"skin" "0"
+"angles" "0 0 0"
+"model" "models/monsters/Boar.mdl"
+"origin" "352 2248 0"
+}
+{
+"classname" "env_model"
+"maxs" "16 16 36"
+"mins" "-16 -16 0"
+"dmg" "0"
+"rendercolor" "0 0 0"
+"rendermode" "0"
+"renderfx" "0"
+"scale" "1.3"
+"framerate" "1"
+"sequence" "0"
+"body" "0"
+"skin" "0"
+"angles" "0 0 0"
+"model" "models/monsters/Boar.mdl"
+"origin" "336 2208 0"
 }
