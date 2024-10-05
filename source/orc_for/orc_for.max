@@ -9,8 +9,8 @@
 "mapversion" "220"
 "angles" "0 0 0"
 "mapversion" "220"
-"wad" "/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/daragoth.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/deralia.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/edana.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/gatecity.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/mastersword.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/medieval.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/ms_generic.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/ms_village.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/thornlands.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/dev/MSCWADS/allinone_fixed.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/dev/MSCWADS/double_rainbow.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/dev/MSCWADS/jp_dev_plus.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/dev/MSCWADS/randomwindows.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/dev/MSCWADS/vangogh.wad"
-"_generator" "J.A.C.K. 1.1.2800 (vpHalfLife)"
+"wad" "/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/daragoth.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/deralia.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/edana.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/edanasewers.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/forest.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/gatecity.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/goblintown.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/mastersword.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/medieval.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/ms_generic.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/thornlands.wad;/Users/matth/Desktop/Sven Coop Map Compilers SCHLT v40/zhlt.wad;/Users/matth/Downloads/allinone_fixed.wad;/Users/matth/Desktop/aaaee.wad;/Users/matth/Desktop/texturework/nashtest.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/valve/xeno.wad;/Users/matth/Documents/GitHub/map-sources/source/daragoth/DaragothDeraliaPath.wad;/Users/matth/Documents/GitHub/map-sources/source/daragoth/DaragothPath.wad;/Users/matth/Documents/GitHub/map-sources/source/daragoth/DaragothPath2.wad;/Users/matth/Documents/GitHub/map-sources/source/thornlands/thorny4.wad;/Program Files (x86)/Steam/steamapps/common/JACK/extracted.wad;/Users/matth/Desktop/window8clear.wad;/Users/matth/Documents/GitHub/map-sources/source/thornlands/blendnorth.wad;/Users/matth/Documents/GitHub/map-sources/source/thornlands/northpath.wad;/Users/matth/Desktop/texturework/Helena/HelenaPaths.wad;/Users/matth/Desktop/Underkeep Textures/fade_black.wad;/Users/matth/Desktop/Underkeep Textures/nw.wad;/Users/matth/Desktop/Underkeep Textures/nw_xeno.wad;/Users/matth/Desktop/Underkeep Textures/underkeep_miptex.wad;/Users/matth/Desktop/texturework/DaragothMSR/HelenaDaragoth/HelDar2.wad;/Users/matth/Desktop/maps/wads/hemlock_miptex.wad;/Users/matth/Desktop/maps/wads/hemlock_to_wad.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/old_helena_extras.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/mscave_extras.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/allinone_fixed.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/clean.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/credtex.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/crow2.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/css.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/decals.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/demontemple_miptex.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/goblintown1.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/kami-platinum.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/lmtex.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/ms_village.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/msc_aaa.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/nightmare.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/pvk.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/rain.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/sfor_extras.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/shizo.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/tempdecal.wad;/Program Files (x86)/Steam/steamapps/common/msrebirth/msr/wwwad.wad;/Users/matth/Desktop/maps/wads/phobia.wad;/Users/matth/Desktop/msrmegaset_makkon_fixed.wad;/Users/matth/Desktop/maps/wads/jm_prefab_factory.wad"
+"_generator" "J.A.C.K. 1.1.3773 (vpHalfLife)"
 {
 ( 360 -3584 -2560 ) ( 360 -3072 -2560 ) ( 360 -3584 -2576 ) NULL [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 ( -384 -3072 -2560 ) ( -384 -3584 -2560 ) ( -384 -3072 -2576 ) NULL [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
@@ -28369,7 +28369,7 @@
 "classname" "light_environment"
 "angles" "0 0 0"
 "_fade" "1.0"
-"_light" "255 232 102 190"
+"_light" "255 232 102 250"
 "origin" "-9 -3247 -2344"
 }
 {
@@ -31433,22 +31433,6 @@
 ( -608 312 -2612 ) ( -640 384 -2612 ) ( -608 312 -2624 ) TEL-THING03 [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 ( -640 312 -2612 ) ( -608 312 -2624 ) ( -640 384 -2624 ) TEL-THING03 [ 0 -1 0 0 ] [ -1 0 0 0 ] 90 1 2
 ( -640 312 -2600 ) ( -640 384 -2612 ) ( -608 312 -2612 ) TEL-THING03 [ 0 -1 0 0 ] [ -1 0 0 0 ] 90 1 2
-}
-}
-{
-"classname" "msarea_transition"
-"targetname" "to idemarks"
-"destname" "The Outskirts of Idemark's Tower"
-"destmap" "idemarks_tower"
-"desttrans" "from_keledrosprelude2"
-"angles" "0 0 0"
-{
-( -560 1228 -2712 ) ( -560 1280 -2712 ) ( -560 1228 -2776 ) AAA_TRANS [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
-( -896 1280 -2712 ) ( -896 1228 -2712 ) ( -896 1280 -2776 ) AAA_TRANS [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
-( -896 1228 -2712 ) ( -560 1228 -2712 ) ( -896 1228 -2776 ) AAA_TRANS [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
-( -560 1280 -2712 ) ( -896 1280 -2712 ) ( -560 1280 -2776 ) AAA_TRANS [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
-( -560 1228 -2776 ) ( -560 1280 -2776 ) ( -896 1228 -2776 ) AAA_TRANS [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
-( -560 1280 -2712 ) ( -560 1228 -2712 ) ( -896 1280 -2712 ) AAA_TRANS [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
 }
 }
 {
@@ -37602,7 +37586,7 @@
 "spawnarea" "spawn_summoner"
 "angles" "0 270 0"
 "killtarget" "spawn_final_reward_hard"
-"params" "make_boss;set_xp_tr;20"
+"params" "make_boss;set_xp_tr;15"
 "origin" "2943.24 -2928.18 -1688"
 }
 {
@@ -38181,4 +38165,41 @@
 "random" "100"
 "angles" "0 0 0"
 "origin" "2944.35 -1312.34 -2336"
+}
+{
+"classname" "msarea_transition"
+"targetname" "KroushTrans"
+"destname" "A hidden bandit's fortress"
+"destmap" "kroush"
+"desttrans" "kroushspawn"
+"angles" "0 0 0"
+{
+( -896 1280 -2712 ) ( -896 1228 -2712 ) ( -896 1280 -2776 ) AAA_TRANS [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -560 1228 -2712 ) ( -560 1280 -2712 ) ( -560 1228 -2776 ) AAA_TRANS [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -560 1280 -2712 ) ( -896 1280 -2712 ) ( -560 1280 -2776 ) AAA_TRANS [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -896 1228 -2712 ) ( -560 1228 -2712 ) ( -896 1228 -2776 ) AAA_TRANS [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -560 1280 -2712 ) ( -560 1228 -2712 ) ( -896 1280 -2712 ) AAA_TRANS [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -560 1228 -2776 ) ( -560 1280 -2776 ) ( -896 1228 -2776 ) AAA_TRANS [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+}
+}
+{
+"classname" "ms_player_spawn"
+"angles" "0 270 0"
+"message" "KroushTrans"
+"targetname" "fromkroush"
+"origin" "-752 1247 -2736"
+}
+{
+"classname" "ms_player_spawn"
+"angles" "0 270 0"
+"message" "KroushTrans"
+"targetname" "fromkroush"
+"origin" "-700 1254 -2736"
+}
+{
+"classname" "ms_player_spawn"
+"angles" "0 270 0"
+"message" "KroushTrans"
+"targetname" "fromkroush"
+"origin" "-657 1253 -2736"
 }
