@@ -2,7 +2,7 @@
 * aluhandra2
 * deralia
 * edana
-* edanasewers
+* ~~edanasewers~~
 * foutpost
 * goblintown
 * challs
@@ -30,3 +30,7 @@
 * orc_for - post nov2015, seems changes were made?
 * thornlands_north - post nov2015, seems changes were made?
 * tundra - post nov2015, some heavy changes were made post nov2015a. Missing nov2015a source.
+
+## 2025-10-24
+* edanasewers source was added to the repo [here](https://github.com/MSRevive/map-sources/commit/ce6895867a7f90c17112fc89c1559b10a033e0e1)
+* there is some desync between this file and repo activity, we should discuss what's still missing or updated.
