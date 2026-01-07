@@ -1,8 +1,8 @@
 # Missing Map Sources
 * aluhandra2
-* deralia
-* edana
-* edanasewers
+* ~~deralia~~ Remade
+* ~~edana~~ Remade
+* ~~edanasewers~~ Remade
 * foutpost
 * goblintown
 * challs
