@@ -1,8 +1,8 @@
 # Missing Map Sources
 * aluhandra2
-* ~~deralia~~ Remade
-* ~~edana~~ Remade
-* ~~edanasewers~~ Remade
+* ~~deralia~~ - Remade
+* ~~edana~~ - Remade
+* ~~edanasewers~~ - Remade
 * foutpost
 * goblintown
 * challs
@@ -19,7 +19,7 @@
 * mines
 
 ## Broken or Dated?
-* helena - needs further looking into
+* ~helena~~ - Remade
 * lowlands - seems we only have a decompiled version.
 * msc_tutorial - we seem to only have a .map
 * skycastle - seems we only have a decompiled version.
