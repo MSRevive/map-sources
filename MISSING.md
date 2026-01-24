@@ -13,18 +13,19 @@
 * unrest
 * unrest2_beta1
 * ww1
-* oceancrossing
+* ~~oceancrossing~~ - Remade by Lockdown
 * island1
 * lostcaverns
 * mines
 
 ## Broken or Dated?
-* ~helena~~ - Remade
-* lowlands - seems we only have a decompiled version.
+* ~~helena~~ - Remade
+* ~~lowlands~~ - Remade by Dridje
 * msc_tutorial - we seem to only have a .map
 * skycastle - seems we only have a decompiled version.
 * smugglers_cove - needs testing.
 * ms_snow - seems we only have a decompiled version, not the "real" source?
+* m2_quest - The source is incomplete.
 
 ## Need Updating
 * orc_for - post nov2015, seems changes were made?
