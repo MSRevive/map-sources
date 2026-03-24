@@ -6,12 +6,7 @@
 * foutpost
 * goblintown
 * challs
-* ms_swamp
-* ms_town
-* ms_underworldv2
 * nightmare_thornlands
-* unrest
-* unrest2_beta1
 * ww1
 * ~~oceancrossing~~ - Remade by Lockdown
 * island1
@@ -31,3 +26,6 @@
 * orc_for - post nov2015, seems changes were made?
 * thornlands_north - post nov2015, seems changes were made?
 * tundra - post nov2015, some heavy changes were made post nov2015a. Missing nov2015a source.
+
+## Mismatched Between BSP and source
+* sfor - The source is missing some stuff by the lake that the BSP has.
